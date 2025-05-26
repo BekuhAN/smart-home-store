@@ -1,6 +1,6 @@
-import { type ReactElement } from "react";
+import { useEffect, type ReactElement } from "react";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/header/header";
 import Home from "./pages/home/home";
 import Footer from "./components/footer/footer";
@@ -11,10 +11,10 @@ import { HeroUIProvider, ToastProvider } from "@heroui/react";
 // import CatalogPage from "./pages/catalog-page/catalog-page";
 
 function App(): ReactElement {
-  // const { pathname } = useLocation();
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [pathname]);
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <HeroUIProvider>

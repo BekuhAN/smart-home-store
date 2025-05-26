@@ -177,7 +177,7 @@ export default function Cart(): ReactElement {
                             </TableCell>
                             <TableCell>
                               <div className={styles.cart_item__price}>
-                                {priceFormat(item.price * item?.count)} ₽
+                                {priceFormat(item.price * (item?.count || 1))} ₽
                               </div>
                             </TableCell>
                             <TableCell>

@@ -1,16 +1,12 @@
 import { useEffect, useState } from "react";
 import { api } from "../api";
-import type { Category } from "../../interfaces/cat";
+import type { Category } from "../../interfaces/category";
 
-interface Params {
-  _embed?: string;
-}
-
-export const useCategories = (params?: Params) => {
+export const useCategories = () => {
   const [categories, setCategories] = useState<Array<Category>>([]);
   useEffect(() => {
     const get = async () => {
-      const items = await api<Category>({ path: "categories", params });
+      const items = await api<Category>({ path: "categories" });
       setCategories(items);
     };
     get();

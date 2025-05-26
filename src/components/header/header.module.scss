@@ -1,31 +1,43 @@
 .header {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   z-index: 5;
   &__inner {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
-    padding-top: 30px;
     height: 100px;
   }
   &__logo {
     font-weight: 600;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+    svg path {
+      fill: var(--primary-color);
+    }
+    &:hover {
+      color: var(--primary-color);
+    }
   }
   &__nav {
     &__list {
       display: flex;
       align-items: center;
-      justify-content: center;
+      margin-left: 50px;
       gap: 30px;
     }
     &__link {
       text-transform: uppercase;
       transition: color 0.3s ease;
+      font-weight: 700;
+      font-size: 14px;
+      &.active {
+        color: var(--primary-color);
+      }
       &:hover {
         color: var(--primary-color);
       }

@@ -75,7 +75,7 @@ function Footer(): ReactElement {
           </div>
         </div>
       </div>
-      <div className={styles.footer__copy}>Copyright © 2025 Мода&Стиль.</div>
+      <div className={styles.footer__copy}>Copyright © 2025 Умный дом.</div>
     </footer>
   );
 }

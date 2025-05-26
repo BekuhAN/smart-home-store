@@ -24,27 +24,38 @@
   "categories": [
     {
       "id": 1,
-      "title": "Рубашка"
+      "title": "Управление",
+      "image": "category-1.png"
     },
     {
       "id": 2,
-      "title": "Обувь"
+      "title": "Климат",
+      "image": "category-2.png"
     },
     {
       "id": 3,
-      "title": "Бомберы"
+      "title": "Датчики",
+      "image": "category-3.png"
     },
     {
       "id": 4,
-      "title": "Брюки"
+      "title": "Безопасность",
+      "image": "category-4.png"
     },
     {
       "id": 5,
-      "title": "Платье"
+      "title": "Электрика",
+      "image": "category-5.png"
     },
     {
       "id": 6,
-      "title": "Пиджак"
+      "title": "Освещение",
+      "image": "category-6.png"
+    },
+    {
+      "id": 7,
+      "title": "Комплекты умного дома",
+      "image": "category-7.png"
     }
   ],
   "trends": [

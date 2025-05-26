@@ -1,14 +1,31 @@
 :root {
   --font-text: "Montserrat", sans-serif;
+  --primary-color: #0078ff;
+  --secondary-color: #002b44;
+  --text-color: #576670;
+  --border-color: #eaeaea;
+
+  --gray: #efefef;
+  --gray-200: #d7d7d7;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-text);
 }
 
 .container {
   max-width: 1600px;
   margin: 0 auto;
+}
+
+.section_title {
+  font-size: 36px;
+  line-height: 1;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 800;
 }
