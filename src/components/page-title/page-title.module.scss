@@ -11,6 +11,12 @@
     font-size: 60px;
     font-weight: 700;
     line-height: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80%;
   }
   &__breadcrumb {
     font-size: 18px;

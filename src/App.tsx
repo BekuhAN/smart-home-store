@@ -7,10 +7,8 @@ import Footer from "./components/footer/footer";
 import { HeroUIProvider, ToastProvider } from "@heroui/react";
 import About from "./pages/about/about";
 import Contacts from "./pages/contacts/contacts";
-// import About from "./pages/about/about";
-// import Contacts from "./pages/contacts/contacts";
-// import Catalog from "./pages/catalog/catalog";
-// import CatalogPage from "./pages/catalog-page/catalog-page";
+import Catalog from "./pages/catalog/catalog";
+import CatalogPage from "./pages/catalog-page/catalog-page";
 
 function App(): ReactElement {
   const { pathname } = useLocation();
@@ -24,10 +22,10 @@ function App(): ReactElement {
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-       <Route path="/about" element={<About />}></Route>
+        <Route path="/about" element={<About />}></Route>
         <Route path="/contacts" element={<Contacts />}></Route>
-         {/* <Route path="/catalog" element={<Catalog />}></Route>
-        <Route path="/catalog/:id" element={<CatalogPage />}></Route> */}
+        <Route path="/catalog" element={<Catalog />}></Route>
+        <Route path="/catalog/:id" element={<CatalogPage />}></Route>
       </Routes>
       <Footer />
     </HeroUIProvider>

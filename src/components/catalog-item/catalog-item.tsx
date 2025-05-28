@@ -28,13 +28,13 @@ function CatalogItem({ item }: Props): ReactElement {
     <div className={styles.catalog_item}>
       <div className={styles.catalog_item__image}>
         <img
-          src={`./assets/catalog/${item.image[0]}`}
+          src={`../assets/catalog/${item.image[0]}`}
           alt={item.title}
           className={styles.main}
         />
         {item.image.length > 1 && (
           <img
-            src={`./assets/catalog/${item.image[1]}`}
+            src={`../assets/catalog/${item.image[1]}`}
             alt={item.title}
             className={styles.sub}
           />
@@ -69,6 +69,9 @@ function CatalogItem({ item }: Props): ReactElement {
             <Icon icon="fluent:more-horizontal-20-regular" />
           </button>
         </div>
+        {item.oldPrice > 0 && (
+          <div className={styles.catalog_item__sale}>Скидка</div>
+        )}
       </div>
       <Link to={`/catalog/${item.id}`} className={styles.catalog_item__title}>
         {item.title}
