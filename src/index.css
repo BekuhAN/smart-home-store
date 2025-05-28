@@ -7,6 +7,7 @@
 
   --gray: #efefef;
   --gray-200: #d7d7d7;
+  --gray-300: #f8f9fb;
 }
 
 * {
@@ -28,4 +29,8 @@
   text-align: center;
   margin-bottom: 50px;
   font-weight: 800;
+}
+
+.mySwiper {
+  padding: 30px 30px !important;
 }

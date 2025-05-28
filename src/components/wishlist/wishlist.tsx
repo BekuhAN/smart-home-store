@@ -1,7 +1,6 @@
 import { type ReactElement } from "react";
 import styles from "./wishlist.module.scss";
 import {
-  Badge,
   Button,
   Drawer,
   DrawerBody,
@@ -36,10 +35,8 @@ export default function Wishlist(): ReactElement {
   return (
     <>
       <div className={styles.wishlist__icon} onClick={onOpen}>
-        <Badge color="default" placement="top-right" content={list.length}>
-          <Icon icon="fluent:heart-20-regular" width="40" height="40" /> (
-          {list.length})
-        </Badge>
+        <Icon icon="fluent:heart-20-regular"/>
+        <span className={styles.wishlist__count}>({list.length})</span>
       </div>
       <Drawer
         radius="none"

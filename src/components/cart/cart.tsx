@@ -3,7 +3,6 @@ import { type FormEvent, type ReactElement, useRef, useState } from "react";
 import styles from "./cart.module.scss";
 import {
   addToast,
-  Badge,
   Button,
   Drawer,
   DrawerBody,
@@ -117,10 +116,8 @@ export default function Cart(): ReactElement {
   return (
     <>
       <div className={styles.cart__icon} onClick={onOpen}>
-        <Badge placement="top-right" content={list.length}>
-          <Icon icon="fluent:shopping-bag-16-regular" width="35" height="35" />(
-          {list.length})
-        </Badge>
+        <Icon icon="fluent:shopping-bag-16-regular" />
+        <span className={styles.cart__count}>({list.length})</span>
       </div>
       <Drawer
         size="3xl"

@@ -12,20 +12,20 @@ function Footer(): ReactElement {
       <div className="container">
         <div className={styles.footer__inner}>
           <div className={styles.footer__column}>
-            <Link className={styles.footer__logo} to="/">
-              Мода&Стиль
-            </Link>
-            <div className={styles.footer__text}>
-              <p>
-                Мы создаем моду, которая говорит о вас. В нашем магазине —
-                только избранные коллекции от талантливых дизайнеров, где каждая
-                вещь становится частью вашего уникального стиля.
-              </p>
-              <p>
-                Качество, индивидуальность и безупречный сервис — вот что делает
-                «Мода&Стиль» местом для тех, кто ценит настоящее искусство в
-                одежде.
-              </p>
+            <div className={styles.footer__title}>Соц. сети</div>
+            <div className={styles.footer__social}>
+              <a
+                href="https://telegram.org/"
+                className={styles.footer__social__item}
+              >
+                <Icon icon="cib:telegram" />
+              </a>
+              <a href="https://vk.com/" className={styles.footer__social__item}>
+                <Icon icon="cib:vk" />
+              </a>
+              <a href="https://ok.ru/" className={styles.footer__social__item}>
+                <Icon icon="cib:odnoklassniki" />
+              </a>
             </div>
           </div>
           <div className={styles.footer__column}>
@@ -46,32 +46,38 @@ function Footer(): ReactElement {
             <ul className={styles.footer__contacts}>
               <li className={styles.footer__contacts__item}>
                 <Icon
-                  className={styles.footer__contacts__icon}
-                  icon="material-symbols-light:map-outline-sharp"
-                  width="24"
-                  height="24"
+                  icon="fluent:location-48-regular"
+                  width="30"
+                  height="30"
                 />
-                г. Краснодар, Восточно-Кругликовская улица, 24
+                г. Краснодар, проспект Чекистов, 28
               </li>
               <li className={styles.footer__contacts__item}>
-                <Icon
-                  className={styles.footer__contacts__icon}
-                  icon="material-symbols-light:phone-enabled-outline-sharp"
-                  width="24"
-                  height="24"
-                />
-                <a href="tel:+7 (999) 888-77-66">+7 (999) 888-77-66</a>
+                <Icon icon="fluent:phone-48-regular" width="30" height="30" />
+                <a href="tel:8-800-250-15-15"> 8-800-250-15-15</a>
               </li>
               <li className={styles.footer__contacts__item}>
-                <Icon
-                  className={styles.footer__contacts__icon}
-                  icon="material-symbols-light:mail-outline-sharp"
-                  width="24"
-                  height="24"
-                />
-                <a href="mailto:info@fashion.ru">info@fashion.ru</a>
+                <Icon icon="fluent:mail-48-regular" width="30" height="30" />
+                <a href="mailto:sale@smart.ru">sale@smart.ru</a>
               </li>
             </ul>
+          </div>
+          <div className={styles.footer__column}>
+            <Link className={styles.footer__logo} to="/">
+              <Icon
+                icon="fluent:home-database-20-regular"
+                width="50"
+                height="50"
+              />{" "}
+              Умный дом
+            </Link>
+            <div className={styles.footer__text}>
+              <p>
+                Добро пожаловать в будущее комфорта и безопасности! Наш магазин
+                предлагает инновационные решения для создания идеального умного
+                дома, где технологии работают на ваше благополучие.
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -16,9 +16,15 @@
   }
   &__icon {
     transition: 0.3s;
-    font-size: 40px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
     &:hover {
       transform: scale(1.1);
     }
+  }
+  &__count {
+    font-size: 16px;
   }
 }
