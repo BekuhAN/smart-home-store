@@ -1,0 +1,29 @@
+.page_title {
+  height: 220px;
+  background-size: 100% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  text-transform: capitalize;
+  &__main {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  &__breadcrumb {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    a {
+      transition: 0.3s;
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+}

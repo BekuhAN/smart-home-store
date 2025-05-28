@@ -82,10 +82,10 @@ export default function Cart(): ReactElement {
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    //gutgesg3pd@translateid.com
+    //yhj04@reva.fun
     emailjs
-      .sendForm("service_wulgaob", "template_7r2dixx", formRef.current || "", {
-        publicKey: "uQUIWvCwv0Nvd-XaD",
+      .sendForm("service_tacw9nw", "template_oku111l", formRef.current || "", {
+        publicKey: "FBbVRZs7lpcd54K2-",
       })
       .then(
         () => {
